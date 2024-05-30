@@ -467,19 +467,6 @@ process_callback = 0
 limit_bottom = 90
 position_smoothing_enabled = true
 
-[node name="ScoreLabel" type="Label" parent="Player"]
-offset_left = -139.0
-offset_top = -81.0
-offset_right = -68.0
-offset_bottom = -58.0
-scale = Vector2(0.858984, 0.859951)
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_f4g3k")
-theme_override_font_sizes/font_size = 8
-text = "Score:"
-vertical_alignment = 1
-autowrap_mode = 2
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_cabwa")
 format = 2
@@ -521,3 +508,20 @@ autoplay = "move"
 
 [node name="Slime2" parent="." instance=ExtResource("6_xy51v")]
 position = Vector2(149, 5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ScoreLabel2" type="Label" parent="CanvasLayer"]
+offset_left = 4.0
+offset_top = 10.0
+offset_right = 268.0
+offset_bottom = 70.0
+scale = Vector2(0.858984, 0.859951)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_f4g3k")
+theme_override_font_sizes/font_size = 40
+text = "Score:"
+vertical_alignment = 1
+autowrap_mode = 2
