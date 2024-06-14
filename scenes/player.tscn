@@ -214,13 +214,13 @@ script = ExtResource("1_w0g87")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.125, 1.125)
 sprite_frames = SubResource("SpriteFrames_ojqy4")
-animation = &"Jump"
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.0934759
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_rovu8")
+one_way_collision_margin = 0.0
 
 [node name="JumpSFX" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_2cick")
